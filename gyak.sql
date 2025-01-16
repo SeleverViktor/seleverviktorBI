@@ -1,3 +1,5 @@
+SELECT*FROM eu_zonak 
+
 
 /* második*/
 SELECT eu_zonak.zonanev AS 'Régió neve', eu_adatok.datum AS 'Dátum', eu_adatok.szazalekpont AS 'Százalékpont' FROM eu_zonak INNER JOIN eu_zonadatok ON eu_zonak.id = eu_zonadatok.zonakID INNER JOIN eu_adatok ON eu_zonadatok.adatokID = eu_adatok.id WHERE eu_zonak.zonanev = "Észak-Európa";
